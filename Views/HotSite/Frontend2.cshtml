@@ -1,0 +1,76 @@
+@model DomainCustomer.Entities.Customer
+@{
+  ViewBag.Title = "Área do Cliente";
+  Layout = "~/Views/Shared/Base/_LayoutBreadCrumbContent.cshtml";
+}
+
+@section breadcrumbs {
+  <div class="ui container">
+    <div class="ui one column grid stackable middle aligned">
+      <div class="row">
+        <div class="column">
+          <h1>Editar Front End</h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+<div class="row">
+  <div class="column">
+    <div class="ui grid stackable wishlist">
+      <div class="row two column">       
+        
+         <div class="column center aligned">
+            <div class="column center aligned">
+                <h3>Campo para Alteração de dados</h3>
+              
+            <form class="ui form " id="editarform">
+                <div class="field required">
+                    <label>Nome</label>
+                    <input type="text" name="namesalvo" id="nomesalvo" placeholder="Você não tem nome salvo ">
+                </div>
+
+                <div class="field required">
+                    <label>Email</label>
+                    <input type="text" name="emailsalvo" id="emailsalvo" placeholder="Você não tem email salvo ">
+                </div>
+
+                <div class="field required">
+                    <label>Telefone</label>
+                    <input type="tel" name="telefonesalvo" id="telefonesalvo" placeholder="Você não tem telefone salvo " class="masked mask_phone">
+                </div>
+
+                <div class="field required">
+                    <label>Assunto</label>
+                    <input type="text" name="assuntosalvo"  id="assuntosalvo" placeholder="Você nâo tem assunto salvo ">
+                </div>
+
+                <div class="field required">
+                    <label>Mensagem</label>
+                 <textarea rows="2" name="mensagemsalvo" id="mensagemsalvo" wfd-id="246" style=""></textarea>
+                </div>
+                @* <button class="ui button" type="button" id="alterar">Editar</button> *@
+                <input type="submit" value="Salvar Alteração" id="salvaalteracao"/>
+                @* <button class="ui button" type="button" id="salvaalteracao">Salvar Alteração/button> *@
+            </form>
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+</div>
+
+<div class="row">
+<div class="column center aligned">
+  <a href="/hotsite/Frontend">Fazer Cadastrado</a>
+</div>
+
+</div>

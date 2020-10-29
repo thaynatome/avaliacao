@@ -1,0 +1,97 @@
+@model DomainCustomer.Entities.Customer
+@{
+  ViewBag.Title = "Área do Cliente";
+  Layout = "~/Views/Shared/Base/_LayoutBreadCrumbContent.cshtml";
+}
+
+@section breadcrumbs {
+  <div class="ui container">
+    <div class="ui one column grid stackable middle aligned">
+      <div class="row">
+        <div class="column">
+          <h1>Cadastro Front End</h1>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+<div class="row">
+  <div class="column">
+    <div class="ui grid stackable wishlist">
+      <div class="row two column">
+        <div class="column center aligned">
+            <form class="ui form" id="formfront">
+                <h3>Cadastrado<h3>
+            <div class="field required">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+            </div>
+            <div class="field required">
+                <label>Email</label>
+                <input type="text" name="email" id="email" placeholder="E-mail" data-validate="email">
+            </div>
+            <div class="field required">
+                <label>Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" class="masked mask_phone">
+            </div>
+            <div class="field required">
+                <label>Assunto</label>
+                <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+            </div>
+            <div class="field required">
+                <label>Mensagem</label>
+                <textarea rows="2" wfd-id="615" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+            </div>
+            @* <button class="ui button" type="button" id="enviar"></button> *@
+            <input type="submit" value="cadastrar" id="enviar"/>
+            
+        </form>
+        </div>
+        <div class="column center aligned">
+            <form class="ui form" >
+                <h3>Campo Valor:<h3>
+            <div class="field ">
+                <label>Valor Nome</label>
+                <input type="text" name="nomevalor" id="nomevalor" placeholder="Nome">
+            </div>
+            <div class="field ">
+                <label>Valor Email</label>
+                <input type="text" name="emailvalor" id="emailvalor" placeholder="E-mail" data-validate="email">
+            </div>
+            <div class="field ">
+                <label>Valor Telefone</label>
+                <input type="text" name="telefonevalor" id="telefonevalor" placeholder="(00) 00000-0000" class="masked mask_phone">
+            </div>
+            <div class="field ">
+                <label>Valor Assunto</label>
+                <input type="text" name="assuntovalor" id="assuntovalor" placeholder="Assunto">
+            </div>
+            <div class="field ">
+                <label> Valor Mensagem</label>
+                <textarea rows="2" wfd-id="615" name="mensagemvalor" id="mensagemvalor" placeholder="Mensagem"></textarea>
+            </div>
+            
+        </form>
+        <div class="column center aligned">
+            <div class="column center aligned">
+               
+              
+            </div>
+           </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="column center aligned">
+  <a href="/hotsite/Frontend2">Editar Cadastrado</a>
+</div>
+
+</div>
+
+
+  
+</div>
